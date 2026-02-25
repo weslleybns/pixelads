@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pixel Ads</title>
+
+<link rel="icon" href="icon.png" type="image/png">
+<link rel="shortcut icon" href="icon.png" type="image/png">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    
+<header>
+<div class="logo">
+<img src="logo.png" alt="Pixel Ads Logo">
+</div>
+<nav>
+<a href="#planos">Planos</a>
+<a href="termos.html">Termos</a>
+<a href="#faq">Perguntas</a>
+</nav>
+</header>
+
+<section class="hero">
+<h2>Não deixe sua cidade morrer</h2>
+<p>Fazemos campanhas profissionais para atrair jogadores qualificados e fortalecer sua cidade.</p>
+<button class="btn" onclick="scrollToPlanos()">Ver Planos</button>
+</section>
+
+<!-- PLANOS -->
+<section class="pricing" id="planos">
+  <div class="pricing-container">
+
+    
+    <div class="pricing-card">
+      <div class="badge">Recomendado</div>
+      <div class="price">R$ 300,00</div>
+      <h3>Standard</h3>
+      <p class="desc">
+        Mostra completa da cidade, com foco em ambientação,
+        sistemas e identidade do projeto.
+      </p>
+
+      <ul>
+        <li>Edição profissional</li>
+        <li>Segmentação precisa</li>
+        <li>Até 3 dias de campanhas</li>
+        <li>Criação de vídeo exclusivo</li>
+      </ul>
+
+      <button onclick="whats('Standard')">
+        Escolher Pacote →
+      </button>
+    </div>
+
+    
+    <div class="pricing-card">
+      <div class="badge">Melhor Estrutura</div>
+      <div class="price">R$ 500,00</div>
+      <h3>Premium</h3>
+      <p class="desc">
+        Estratégia personalizada de marketing,
+        criada especialmente para seu perfil.
+      </p>
+
+      <ul>
+        <li>Edição profissional</li>
+        <li>Segmentação avançada</li>
+        <li>Até 7 dias de campanhas</li>
+        <li>Dois vídeos exclusivos</li>
+      </ul>
+
+      <button onclick="whats('Premium')">
+        Escolher Pacote →
+      </button>
+    </div>
+
+    
+    <div class="pricing-card">
+      <div class="badge">Exclusivo</div>
+      <div class="price">R$ 800,00</div>
+      <h3>Avançado</h3>
+      <p class="desc">
+        Estratégia personalizada de marketing,
+        criada especialmente para seu perfil.
+      </p>
+
+      <ul>
+        <li>Edição profissional</li>
+        <li>Segmentação avançada</li>
+        <li>Até 7 dias de campanhas</li>
+        <li>Dois vídeos exclusivos</li>
+      </ul>
+
+      <button onclick="whats('Avançado')">
+        Escolher Pacote →
+      </button>
+    </div>
+
+  </div>
+</section>
+
+<!-- FEEDBACKS -->
+<section class="section">
+<h2>Feedbacks</h2>
+<div class="feedback-wrapper">
+
+<div class="feedback-section">
+<div class="testimonial-card active">
+<div class="stars">★★★★★</div>
+<p>A descrição do feedback aqui</p>
+<div class="testimonial-footer">
+<div class="user-info">
+<p>Usuário</p>
+<p>Cidade</p>
+</div>
+<div class="quote">❝</div>
+</div>
+</div>
+<div class="testimonial-card">
+<div class="stars">★★★★★</div>
+<p>A descrição do feedback aqui</p>
+<div class="testimonial-footer">
+<div class="user-info">
+<p>Usuário</p>
+<p>Cidade</p>
+</div>
+<div class="quote">❝</div>
+</div>
+</div>
+</div>
+
+<div class="feedback-section">
+<div class="testimonial-card active">
+<div class="stars">★★★★★</div>
+<p>A descrição do feedback aqui.</p>
+<div class="testimonial-footer">
+<div class="user-info">
+<p>Usuário</p>
+<p>Cidade</p>
+</div>
+<div class="quote">❝</div>
+</div>
+</div>
+<div class="testimonial-card">
+<div class="stars">★★★★★</div>
+<p>A descrição do feedback aqui</p>
+<div class="testimonial-footer">
+<div class="user-info">
+<p>Usuário</p>
+<p>Cidade</p>
+</div>
+<div class="quote">❝</div>
+</div>
+</div>
+</div>
+
+</div>
+</section>
+
+<!-- FAQ -->
+<section class="section" id="faq">
+<h2>Perguntas</h2>
+<div class="faq-container">
+
+<div class="faq-item">
+<button class="faq-question">
+O que é a Pixel Ads?
+<span>+</span>
+</button>
+<div class="faq-answer">
+A Pixel Ads é uma agência especializada em marketing voltado para cidades do FiveM, ajudando servidores a crescer e se destacar.
+</div>
+</div>
+
+<div class="faq-item">
+<button class="faq-question">
+Por que investir em marketing para uma cidade FiveM?
+<span>+</span>
+</button>
+<div class="faq-answer">
+Porque o marketing certo faz toda a diferença, com campanhas bem
+direcionadas, sua cidade atrai jogadores ativos e de qualidade, dessa 
+forma fortalecendo o crescimento e o reconhecimento do servidor.
+</div>
+</div>
+
+<div class="faq-item">
+<button class="faq-question">
+O que diferencia a Pixel Ads das outras agências?
+<span>+</span>
+</button>
+<div class="faq-answer">
+Nosso diferencial é entender o universo do FiveM a fundo, não fazemos
+marketing genérico, criamos estratégias personalizadas para cada tipo
+de cidade (roleplay, academy, etc.)
+</div>
+</div>
+
+<div class="faq-item">
+<button class="faq-question">
+Como a Pixel Ads ajuda na qualificação de jogadores?
+<span>+</span>
+</button>
+<div class="faq-answer">
+Através do Pixel Ads, capacitamos novos jogadores com noções básicas 
+e avançadas de roleplay, melhorando a experiência dentro das cidades. 
+Assim, além de atrair novos jogadores.
+</div>
+</div>
+
+<div class="faq-item">
+<button class="faq-question">
+Como funciona a contratação?
+<span>+</span>
+</button>
+<div class="faq-answer">
+Você escolhe o plano e entra em contato via WhatsApp para darmos início.
+</div>
+</div>
+
+</div>
+</section>
+
+<hr style="border: none; height: 2px; background: linear-gradient(to right, #ff0000, #ffffff1a); margin: 20px 0; border-radius: 2px;">
+
+<!-- FOOTER -->
+<footer>
+<div class="footer-social">
+<h3>Nossas redes</h3>
+<div class="social-icons">
+<a href="https://instagram.com/pixeladsgg"><i class="fab fa-instagram"></i></a>
+<a href="https://tiktok.com/@pixeladsgg"><i class="fab fa-tiktok"></i></a>
+<a href="https://wa.me/5511955793218"><i class="fab fa-whatsapp"></i></a>
+</div>
+</div>
+© 2026 Pixel Ads - Todos os direitos reservados
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
