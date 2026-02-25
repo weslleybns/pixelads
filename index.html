@@ -10,8 +10,18 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:'Montserrat',sans-serif;}
-body{background:#000000;color:#fff;overflow-x:hidden;}
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Montserrat',sans-serif;
+}
+
+body{
+background:#000;
+color:#fff;
+overflow-x:hidden;
+}
 
 /* CABEÇALHO */
 header{
@@ -23,12 +33,18 @@ position:fixed;
 width:100%;
 top:0;
 z-index:1000;
-background:#000000;
+background:#000;
 backdrop-filter:blur(6px);
 }
 
-.logo img{height:45px;transition:0.3s;}
-.logo img:hover{transform:scale(1.05);}
+.logo img{
+height:45px;
+transition:0.3s;
+}
+
+.logo img:hover{
+transform:scale(1.05);
+}
 
 nav a{
 color:#fff;
@@ -52,12 +68,13 @@ transition:0.3s;
 border-radius:3px;
 }
 
-nav a:hover::after,
-nav a.active::after{width:100%;}
+nav a:hover::after{
+width:100%;
+}
 
 /* HERO */
 .hero{
-height:50vh;
+min-height:75vh;
 display:flex;
 flex-direction:column;
 justify-content:center;
@@ -65,11 +82,18 @@ align-items:center;
 text-align:center;
 padding:20px;
 margin-top:80px;
-background:linear-gradient(to bottom,#000,#000);
 }
 
-.hero h2{font-size:42px;margin-bottom:20px;}
-.hero p{max-width:600px;margin-bottom:30px;color:#ccc;}
+.hero h2{
+font-size:42px;
+margin-bottom:20px;
+}
+
+.hero p{
+max-width:600px;
+margin-bottom:30px;
+color:#ccc;
+}
 
 .btn{
 padding:16px 35px;
@@ -82,53 +106,120 @@ border-radius:50px;
 transition:0.3s;
 box-shadow:0 0 15px rgba(255,0,0,0.4);
 }
+
 .btn:hover{
 transform:scale(1.08);
 box-shadow:0 0 20px rgba(255,0,0,0.9);
 }
 
-/* SECTION */
-.section{padding:100px 10%;text-align:center;}
-.section h2{font-size:32px;margin-bottom:30px;}
-
 /* PLANOS */
-.cards{
-display:flex;
-gap:30px;
-flex-wrap:wrap;
-justify-content:center;
+.pricing{
+background:#000;
+padding:100px 5%;
 }
 
-.card{
-background:#f4f4f4;
-padding:35px;
+.pricing-container{
+display:flex;
+gap:40px;
+justify-content:center;
+flex-wrap:wrap;
+}
+
+.pricing-card{
+background:#fff;
 width:320px;
+padding:30px;
 border-radius:16px;
-color:#000;
+position:relative;
+transition:0.3s;
+box-shadow:0 10px 30px rgba(0,0,0,0.15);
+}
+
+.pricing-card:hover{
+transform:translateY(-10px);
+box-shadow:0 20px 40px rgba(0,0,0,0.25);
+}
+
+.badge{
+position:absolute;
+top:-12px;
+right:20px;
+background:#ff0000;
+color:#fff;
+padding:6px 12px;
+font-size:12px;
+border-radius:20px;
+font-weight:bold;
+}
+
+.price{
+font-size:22px;
+font-weight:bold;
+color:#111;
+margin-bottom:10px;
+}
+
+.pricing-card h3{
+font-size:22px;
+font-weight:700;
+color:#111;
+margin:10px 0;
+}
+
+.desc{
+font-size:14px;
+color:#666;
+margin-bottom:20px;
+}
+
+.pricing-card ul{
+list-style:none;
+margin-bottom:25px;
+}
+
+.pricing-card ul li{
+margin-bottom:10px;
+font-size:14px;
+color:#111;
+position:relative;
+padding-left:25px;
+}
+
+.pricing-card ul li::before{
+content:"✔";
+position:absolute;
+left:0;
+color:#ff0000;
+font-weight:bold;
+}
+
+.pricing-card button{
+width:100%;
+background:#ff0000;
+color:#fff;
+border:none;
+padding:14px;
+border-radius:8px;
+font-weight:bold;
+cursor:pointer;
 transition:0.3s;
 }
 
-.card:hover{
-transform:translateY(-12px);
-box-shadow:0 20px 40px rgba(0, 0, 0, 0);
+.pricing-card button:hover{
+opacity:0.9;
 }
 
-.price{font-size:30px;color:#000000;margin-bottom:15px;font-weight:bold;}
-.card ul{list-style:none;margin-bottom:25px;}
-.card ul li{margin-bottom:10px;}
-
-.card button{
-width:100%;
-padding:14px;
-background:#ff0000;
-border:none;
-color:#fff;
-font-weight:bold;
-border-radius:50px;
-cursor:pointer;
+/* FEEDBACK */
+.section{
+padding:100px 10%;
+text-align:center;
 }
 
-/* FEEDBACKS */
+.section h2{
+font-size:32px;
+margin-bottom:30px;
+}
+
 .feedback-wrapper{
 display:flex;
 justify-content:center;
@@ -161,8 +252,16 @@ opacity:1;
 transform:translateY(0);
 }
 
-.stars{color:#facc15;margin-bottom:10px;}
-.testimonial-card p{color:#ccc;font-style:italic;margin-bottom:15px;}
+.stars{
+color:#facc15;
+margin-bottom:10px;
+}
+
+.testimonial-card p{
+color:#ccc;
+font-style:italic;
+margin-bottom:15px;
+}
 
 .testimonial-footer{
 display:flex;
@@ -170,12 +269,18 @@ justify-content:space-between;
 align-items:center;
 }
 
-.user-info p:first-child{font-weight:600;}
-.user-info p:last-child{color:#777;font-size:0.8rem;}
-/* Feedback menu */
+.user-info p:first-child{
+font-weight:600;
+}
+
+.user-info p:last-child{
+color:#777;
+font-size:0.8rem;
+}
+
 .quote{
 background:#ff0000;
-padding: 10px;
+padding:10px;
 border-radius:100%;
 display:flex;
 align-items:center;
@@ -209,6 +314,15 @@ font-weight:600;
 cursor:pointer;
 display:flex;
 justify-content:space-between;
+align-items:center;
+}
+
+.faq-question span{
+transition:0.3s;
+}
+
+.faq-item.active .faq-question span{
+transform:rotate(45deg);
 }
 
 .faq-answer{
@@ -274,14 +388,25 @@ box-shadow:0 10px 25px rgba(255,0,0,0.5);
 
 @media(max-width:768px){
 .hero h2{font-size:28px;}
-.cards{flex-direction:column;align-items:center;}
+.pricing-container{flex-direction:column;align-items:center;}
 .feedback-wrapper{flex-direction:column;align-items:center;}
 }
+
+html{
+scroll-behavior:smooth;
+}
+
+header.scrolled{
+background:#000;
+box-shadow:0 5px 20px rgba(0,0,0,0.5);
+}
+
 </style>
 </head>
 
 <body>
 
+    
 <header>
 <div class="logo">
 <img src="logo.png" alt="Pixel Ads Logo">
@@ -300,35 +425,76 @@ box-shadow:0 10px 25px rgba(255,0,0,0.5);
 </section>
 
 <!-- PLANOS -->
-<section class="section" id="planos">
-<h2>Nossos Planos</h2>
-<div class="cards">
+<section class="pricing" id="planos">
+  <div class="pricing-container">
 
-<div class="card">
-<div class="price">R$ 300,00</div>
-<h3>Standard</h3>
-<ul>
-<li>✓ Edição profissional</li>
-<li>✓ Segmentação precisa</li>
-<li>✓ Até 3 dias</li>
-<li>✓ Vídeo exclusivo</li>
-</ul>
-<button onclick="whats('Standard')">Escolher Pacote</button>
-</div>
+    
+    <div class="pricing-card">
+      <div class="badge">Recomendado</div>
+      <div class="price">R$ 300,00</div>
+      <h3>Standard</h3>
+      <p class="desc">
+        Mostra completa da cidade, com foco em ambientação,
+        sistemas e identidade do projeto.
+      </p>
 
-<div class="card">
-<div class="price">R$ 500,00</div>
-<h3>Premium</h3>
-<ul>
-<li>✓ Edição profissional</li>
-<li>✓ Segmentação avançada</li>
-<li>✓ Até 7 dias</li>
-<li>✓ Dois vídeos exclusivos</li>
-</ul>
-<button onclick="whats('Premium')">Escolher Pacote</button>
-</div>
+      <ul>
+        <li>Edição profissional</li>
+        <li>Segmentação precisa</li>
+        <li>Até 3 dias de campanhas</li>
+        <li>Criação de vídeo exclusivo</li>
+      </ul>
 
-</div>
+      <button onclick="whats('Standard')">
+        Escolher Pacote →
+      </button>
+    </div>
+
+    
+    <div class="pricing-card">
+      <div class="badge">Melhor Estrutura</div>
+      <div class="price">R$ 500,00</div>
+      <h3>Premium</h3>
+      <p class="desc">
+        Estratégia personalizada de marketing,
+        criada especialmente para seu perfil.
+      </p>
+
+      <ul>
+        <li>Edição profissional</li>
+        <li>Segmentação avançada</li>
+        <li>Até 7 dias de campanhas</li>
+        <li>Dois vídeos exclusivos</li>
+      </ul>
+
+      <button onclick="whats('Premium')">
+        Escolher Pacote →
+      </button>
+    </div>
+
+    
+    <div class="pricing-card">
+      <div class="badge">Exclusivo</div>
+      <div class="price">R$ 800,00</div>
+      <h3>Avançado</h3>
+      <p class="desc">
+        Estratégia personalizada de marketing,
+        criada especialmente para seu perfil.
+      </p>
+
+      <ul>
+        <li>Edição profissional</li>
+        <li>Segmentação avançada</li>
+        <li>Até 7 dias de campanhas</li>
+        <li>Dois vídeos exclusivos</li>
+      </ul>
+
+      <button onclick="whats('Avançado')">
+        Escolher Pacote →
+      </button>
+    </div>
+
+  </div>
 </section>
 
 <!-- FEEDBACKS -->
@@ -446,7 +612,7 @@ Como funciona a contratação?
 <span>+</span>
 </button>
 <div class="faq-answer">
-Você escolhe o plano e entra em contato via WhatsApp para darmos incio.
+Você escolhe o plano e entra em contato via WhatsApp para darmos início.
 </div>
 </div>
 
@@ -497,6 +663,16 @@ current=(current+1)%cards.length;
 cards[current].classList.add('active');
 },4000);
 });
+
+window.addEventListener("scroll",()=>{
+const header=document.querySelector("header");
+if(window.scrollY>50){
+header.classList.add("scrolled");
+}else{
+header.classList.remove("scrolled");
+}
+});
+
 </script>
 
 </body>
