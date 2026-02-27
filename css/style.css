@@ -1,3 +1,10 @@
+:root{
+  --primary:#ff0000;
+  --dark:#000;
+  --text:#fff;
+  --gray:#ccc;
+}
+
 *{
 margin:0;
 padding:0;
@@ -522,7 +529,7 @@ box-shadow:0 5px 20px rgba(0,0,0,0.5);
   margin-left: -20px;
   transition: 1.0s;
 }
-s
+
 /* Remove margem da primeira */
 .logos img:first-child {
   margin-left: 0;
@@ -682,4 +689,63 @@ section,
 .container,
 .card {
   background: transparent !important;
+}
+
+/* PARCEIROS */
+.parceiros {
+  padding: 120px 10%;
+  background: #0a0a0a;
+  text-align: center;
+}
+
+.parceiros-header {
+  max-width: 700px;
+  margin: 0 auto 80px;
+}
+
+.parceiros-sub {
+  display: inline-block;
+  font-size: 14px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  opacity: 0.6;
+  margin-bottom: 15px;
+}
+
+.parceiros p {
+  opacity: 0.6;
+  line-height: 1.6;
+}
+
+.parceiros-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 40px;
+  align-items: center;
+}
+
+.parceiro-card {
+  padding: 40px;
+  border-radius: 20px;
+  background: rgba(255,255,255,0.03);
+  backdrop-filter: blur(8px);
+  transition: 0.4s ease;
+}
+
+.parceiro-card img {
+  max-width: 120px;
+  filter: grayscale(100%);
+  opacity: 0.7;
+  transition: 0.4s ease;
+}
+
+.parceiro-card:hover {
+  background: rgba(255,255,255,0.08);
+  transform: translateY(-8px);
+}
+
+.parceiro-card:hover img {
+  filter: grayscale(0%);
+  opacity: 1;
+  transform: scale(1.05);
 }
