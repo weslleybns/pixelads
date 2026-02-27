@@ -486,7 +486,7 @@ box-shadow:0 5px 20px rgba(0,0,0,0.5);
 /* SEÇÃO */
 .prova-social {
   background: #000000;
-  height: 30vh;
+  height: 40vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -500,7 +500,7 @@ box-shadow:0 5px 20px rgba(0,0,0,0.5);
 /* TEXTO */
 .prova-social h2 {
   font-size: 20px;
-  font-weight: 700;
+  font-weight: 500;
   color: #f1f1f1;
   margin-bottom: 40px;
   line-height: 1.2;
@@ -514,13 +514,13 @@ box-shadow:0 5px 20px rgba(0,0,0,0.5);
 }
 
 .logos img {
-  width: 80px;
-  height: 80px;
+  width: 70px;
+  height: 70px;
   border-radius: 50%;
   object-fit: cover;
-  border: 5px solid #00000000;
-  margin-left: -30px;
-  transition: 0.3s;
+  border: 1px solid #000;
+  margin-left: -20px;
+  transition: 1.0s;
 }
 s
 /* Remove margem da primeira */
@@ -530,6 +530,139 @@ s
 
 /* Efeito hover opcional */
 .logos img:hover {
-  transform: scale(1.1);
+  transform: scale(1.2);
   z-index: 2;
+}
+
+/* ====== XP DASHBOARD ====== */
+
+.xp-dashboard {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 120px 20px;
+}
+
+.xp-logo {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.xp-logo h1 {
+    font-size: 80px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.xp-logo span {
+    font-weight: 600;
+    color: #ccc;
+}
+
+.xp-metric {
+    margin-bottom: 60px;
+}
+
+.xp-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.xp-header h2 {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.xp-header span {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.xp-bar {
+    width: 100%;
+    height: 12px;
+    background: #666;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.xp-progress {
+    height: 100%;
+    background: linear-gradient(90deg, #ff0000, #ff0000);
+    border-radius: 10px;
+    transition: width 1s ease-in-out;
+}
+
+
+/* === FUNIL === */
+.aida-section{
+  padding:120px 10%;
+  background:#000000;
+  text-align:center;
+}
+
+.aida-title{
+  font-size:20px;
+  margin-bottom:20px;
+  color: #fff;;
+  font-weight:700;
+}
+
+.funil-container{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:25px;
+}
+
+/* BASE */
+.funil{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:#fff;
+  font-weight:700;
+  border-radius:100px;
+  box-shadow:0 20px 40px rgba(0,0,0,0.2);
+  transition:0.4s;
+  letter-spacing:2px;
+}
+
+/* TAMANHOS */
+.etapa1{
+  width:520px;
+  height:60px;
+  background:linear-gradient(90deg,#b80000,#f80606);
+}
+
+.etapa2{
+  width:420px;
+  height:55px;
+  background:linear-gradient(90deg,#b80000,#f80606);
+}
+
+.etapa3{
+  width:320px;
+  height:50px;
+  background:linear-gradient(90deg,#b80000,#f80606);
+}
+
+.etapa4{
+  width:220px;
+  height:40px;
+  background:linear-gradient(90deg,#b80000,#f80606);
+}
+
+/* HOVER */
+.funil:hover{
+  transform:scale(1.06);
+}
+
+/* RESPONSIVO */
+@media(max-width:768px){
+  .etapa1{width:100%;}
+  .etapa2{width:80%;}
+  .etapa3{width:60%;}
+  .etapa4{width:40%;}
 }
