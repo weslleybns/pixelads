@@ -14,48 +14,6 @@
 *{margin:0;padding:0;box-sizing:border-box;font-family:'Montserrat',sans-serif;}
 body{background:#000000;color:#fff;overflow-x:hidden;}
 
-/* CABEÇALHO */
-header{
-padding:20px 10%;
-display:flex;
-justify-content:space-between;
-align-items:center;
-position:fixed;
-width:100%;
-top:0;
-z-index:1000;
-background:#000;
-backdrop-filter:blur(6px);
-}
-
-.logo img{height:45px;transition:0.3s;}
-.logo img:hover{transform:scale(1.05);}
-
-nav a{
-color:#fff;
-text-decoration:none;
-margin-left:25px;
-font-weight:600;
-position:relative;
-padding-bottom:6px;
-font-size:15px;
-}
-
-nav a::after{
-content:"";
-position:absolute;
-left:0;
-bottom:0;
-width:0;
-height:3px;
-background:#000000;
-transition:0.3s;
-border-radius:3px;
-}
-
-nav a:hover::after,
-nav a.active::after{width:100%;}
-
 /* CONTEÚDO TERMOS */
 .terms-section{
 padding:140px 10% 80px 10%;
