@@ -633,25 +633,25 @@ s
 .etapa1{
   width:520px;
   height:60px;
-  background:linear-gradient(90deg,#b80000,#f80606);
+  background:linear-gradient(90deg,#570000,#FF0000);
 }
 
 .etapa2{
   width:420px;
   height:55px;
-  background:linear-gradient(90deg,#b80000,#f80606);
+  background:linear-gradient(90deg,#570000,#FF0000);
 }
 
 .etapa3{
   width:320px;
   height:50px;
-  background:linear-gradient(90deg,#b80000,#f80606);
+  background:linear-gradient(90deg,#570000,#FF0000);
 }
 
 .etapa4{
   width:220px;
   height:40px;
-  background:linear-gradient(90deg,#b80000,#f80606);
+  background:linear-gradient(90deg,#570000,#FF0000);
 }
 
 /* HOVER */
